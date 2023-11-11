@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{David Zeleniak}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Software Engineer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\icon{Globe}{11}{\href{http://www.google.com}{davidzeleniak.com}}\\ 
+    \icon{Phone}{11}{(702) 325-6282}\\
+    \icon{MapMarker}{11}{Las Vegas, Nevada}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:email@example.com}{zeleniak.david@gmail.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/uma-dev}{github.com/dzeleniak}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com}{/in/dzeleniak}}\\    
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+    %Dummy text
+Results-driven Software Engineer experienced in the end-to-end development lifecycle, from design and implementation to rigorous testing and ongoing maintenance. Adept at integrating Design Thinking, LEAN Manufacturing, and Kaizen methodologies to optimize software solutions for efficiency and user satisfaction. Expertise spans both Front-end and Back-end development, coupled with a strong background in DevOps and Automation. Committed to leveraging innovative technologies to drive impactful results.
+\\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Bash, C\#, C/C++, Golang, Java, Javascript, HTML, CSS, Powershell, Python
+    \end{minipage}
+    \vspace{2mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+AWS, Azure, Cloudflare, Docker, Document (No-SQL) Databases, Kubernetes, Linux, Okta, SQL, Terraform
+    \end{minipage}
+    
+    \vspace{2mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Practices:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+Agile, CI/CD, Code Review, Design Thinking, Project Management, Software Testing, Systems Administration, Technical Writing, UX Testing
+    \end{minipage}
+    \vspace{4mm}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{2018 - 2023}
+        {University of Nevada, Las Vegas}
+        {}
+		{B.S. Computer Science}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+        {7/2023 -- Present}
+		{Full Stack Engineer - Digital Innovation}
+		{Kimberly Clark Corporation}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Developed internal ChatGPT client using NextJS, Tailwind, and Azure Cognitive Services, enhancing user experience while providing data privacy to the organization. Played a supporting role in formulating scaling architecture to deploy to over 40,000 employees.
+            \item Designed and implemented an automated platform to streamline the creation and CI/CD pipelines for web apps and microservices in Azure, optimizing development workflows and ensuring consistent deployments.
+            \item Architected and developed a sizing tool for Huggies brand catering to North America and EMEA regions, forecasting a revenue impact exceeding \$10 million. This innovative solution aimed at enhancing user experience and customer satisfaction, contributing significantly to business growth.
+            \item Leveraged Design Thinking and Agile methodologies to conduct iterative planning, design, and development cycles for experimental products. Collaborated closely with consultants, incorporating their feedback and integrating insights from user testing. This approach ensured a dynamic and responsive development process, fostering the creation of innovative and user-centric solutions.
+\vspace{1mm}
+        \end{itemize} 
+        \texttt{Next JS} \slashsep \texttt{Typescript} \slashsep \texttt{Tailwind CSS} \\ \texttt{Azure} \slashsep \texttt{Terraform} \slashsep \texttt{Cosmos DB}}
+        
+	\entry
+		{5/2022 -- 7/2023}
+		{Cloud Automation Engineer - Infrastructure / Web Hosting}
+		{Kimberly Clark Corporation}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Designed, developed, and deployed a site management application for a global server farm with thousands of sites, using ASP.NET and Blazor with a SQL Server backend, leading to enhanced operational efficiency and streamlined site management.
+            \item Implemented a robust automation process using Azure DevOps pipelines to proactively manage and rotate Personal Access Tokens and secret keys for Service Accounts and Service Principals ensuring their security and preventing expiration issues. This process seamlessly stored the updated credentials in Azure Key Vaults, enabling dynamic referencing for enhanced security and efficiency.
+            \item Created and documented Terraform modules for specific resources and template modules for organization-wide adoption, ensuring standardized infrastructure provisioning.
+            \item  Established a process for locally caching container images and conducting malware scans, facilitating the seamless migration to a Kubernetes ecosystem while enhancing security and efficiency.
+            \item Implemented CI/CD processes for deploying Kubernetes applications using Azure Kubernetes Services, Helm Charts, and Terraform, streamlining deployment and ensuring scalability and reliability.
+            \item Established a deployment process for Azure wikis to a static site with Okta authentication, ensuring secure and efficient access to documentation and information.
+        \end{itemize} 
+\vspace{1mm}
+        \texttt{Terraform} \slashsep \texttt{Azure} \slashsep \texttt{Azure Pipelines} \\ \texttt{.NET (C\#, VB)} \slashsep \texttt{Kubernetes} \slashsep \texttt{Cloudflare}}
+	\entry
+		{1/2020 -- 1/2021 \\ \footnotesize{Part-time}}
+		{Software Developer}
+		{Cloudsurf Software}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+\item Collaborated with a team of 4 developers to deliver web and mobile applications for local clients, utilizing React, React Native, and AWS Lambda Functions. Successfully delivered high-quality solutions that met client requirements and provided exceptional user experiences.
+\item Set up and configured the organization's cloud environment, implementing robust identity and security practices. Ensured the scalability, reliability, and security of cloud-based applications, contributing to the organization's technological infrastructure and data protection.
+
+\vspace{1mm}
+        \end{itemize} 
+                    \texttt{AWS} \slashsep \texttt{Javascript}\slashsep \texttt{React}}
+                
+	\entry
+		{5/2019 -- 5/2022 \\}
+		{BIM Engineer / Autodesk Software Developer}
+		{C-Los Design Solutions}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+\item Spearheaded a team of CAD designers for pipefitting on a \$500M project, responsible for producing shop drawings and models.
+\item Successfully led coordination with multiple subcontractors' designs, contributing to the integration of their designs into a single-engineered solution within the constraints of aggressive schedules.
+            \item Developed, and maintained mission-critical software using .NET and Autodesk's SDK, enabling seamless daily operations for a team of approximately 20 users.
+\vspace{1mm}
+        \end{itemize} 
+                \texttt{Autodesk Software (Revit, Navis, Autocad)} \slashsep \texttt{.NET (C\#)}\slashsep \texttt{Project Management}}
+
+        \entry
+		{8/2018 -- 5/2019 \\}
+		{Software Development Intern - Identity Management}
+		{University of Nevada, Las Vegas}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Developed and enhanced ASP.NET and Java Spring applications with an OracleDB backend, contributing to the redesign of a critical student portal used for academic progress tracking, payments, and class registration. 
+            \item Transformed web pages into mobile-friendly interfaces using Bootstrap, ensuring seamless access and usability for users on various devices. Implemented responsive design principles to optimize the portal's accessibility, resulting in improved user satisfaction.
+        \end{itemize} 
+        \texttt{Bootstrap} \slashsep \texttt{.NET (C\#)}\slashsep\texttt{OracleDB}}
+
+	\entry
+        {5/2017 -- 8/2018\\5/2016 -- 8/2016\\}
+		{Information Technology Intern}
+		{Southland Industries}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+\item Provided on-site support for hardware and networking issues, troubleshooting and resolving technical challenges in a Windows Server environment. Successfully addressed local IT concerns while maintaining a strong rapport between the IT department and the local business team.
+\item Collaborated with a national helpdesk to address IT-related issues on a broader scale, offering remote assistance and solutions for challenges related to Active Directory, Microsoft Exchange, PowerShell, and MDMs for user devices. 
+\item Demonstrated strong problem-solving skills and contributed to a seamless IT support experience across the organization.
+
+        \end{itemize} 
+        \texttt{Network Troubleshooting}\slashsep \texttt{Powershell}\slashsep\texttt{System Administration}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Highlights
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{UNLV}
+		{VolunteerOne}
+		{github.com/VolunteerOne/volunteer-one-app}
+		{Designed and developed backend architecture for a Golang and React Native based mobile app, enabling a swipe-to-match network connecting volunteers with organizations.}
+    \entry
+		{UNLV}
+		{Espresso}
+		{Private}
+		{Engineered a compiler featuring Lexical, Syntactic, and Semantic analysis, along with code generation capabilities. Successfully produced bytecode compatible with the JVM, encompassing the full compilation process from parse tree to execution.}
+	\entry
+		{UNLV}
+		{XV6 Implementation}
+		{Private}
+		{Implemented core components of an ARM-based Unix kernel on QEMU, focusing on memory management, process scheduling, and file system features. Achieved a 2x improvement in high-priority process scheduling efficiency with a custom priority-based algorithm.}
+  %   \entry
+		% {Technology}
+		% {My project 4}
+		% {github.com link}
+		% {%Dummy text 
+  %       \lipsum[1][1-3]}
+\end{entrylist}
+
+\end{document}
